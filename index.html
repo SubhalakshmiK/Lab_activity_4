@@ -1,40 +1,53 @@
-<!DOCTYPE html>
-<html>
-   <head>
-    <title>Application Registration</title>
-    <meta name="robots" content="noindex, nofollow">
-    
-     <!-- Include CSS File Here -->
-    <link rel="stylesheet" href="css/style.css"/>
+<!DOCTYPE HTML> 
+<html> 
 
-     <!-- Include JS File Here -->
-     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-     <script type="text/javascript" src="js/registration.js"></script>
+<head> 
+	<title>Application Registration for entrance exam</title> 
+	
+	<script src= "https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"> 
+	</script> 
+</head> 
 
-   </head>
-     
-  <body>
+<body style = "text-align:center;"> 
+	
+	<h1 style = "color:Red;" > 
+		Application Registration
+	</h1> 
+	
+	<p id = "GFG_UP" style = 
+			"font-size: 15px; font-weight: bold;"> 
+	</p> 
+	
+	<select id = "select"> 
+		<option value="GFG1">GFG1</option> 
+		<option value="GFG2">GFG2</option> 
+		<option value="GFG3">GFG3</option> 
+		<option value="GFG4">GFG4</option> 
+		<option value="GFG5">GFG5</option> 
+	</select> 
+	
+	<br><br> 
+	
+	<button onclick = "gfg_Run()"> 
+		Click here 
+	</button> 
+	
+	<p id = "GFG_DOWN" style = 
+		"font-size: 23px; font-weight: bold; color: green; "> 
+	</p> 
+	
+	<script> 
+		var el_up = document.getElementById("GFG_UP"); 
+		var el_down = document.getElementById("GFG_DOWN"); 
+		
+		el_up.innerHTML = "Click on the button to get the " 
+					+ "first option's value using JQuery"; 
+		
+		function gfg_Run() { 
+			el_down.innerHTML = 
+				$("#select").prop("selectedIndex", 0).val(); 
+		}		 
+	</script> 
+</body> 
 
-    <div class="container">
-
-    <div class="main">
-    <form class="form" method="post" action="#">
-       <h2>Application Registration</h2>
-       <label>Name :</label>
-       <input type="text" name="dname" id="name">
-      
-       <label>Email :</label>
-       <input type="text" name="demail" id="email">
-      
-       <label>Password :</label>
-       <input type="password" name="password" id="password">
-      
-       <label>Confirm Password :</label>
-       <input type="password" name="cpassword" id="cpassword">
-
-       <input type="button" name="register" id="register" value="Register">
-   </form>
-   </div>
-    </div>   
- </body>
-</html>
+</html> 
