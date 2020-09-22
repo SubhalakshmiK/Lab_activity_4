@@ -1,22 +1,20 @@
 <!DOCTYPE HTML> 
 <html> 
-
-<head> 
-	<title>Passengers Registration for Tours & Travels</title> 
+    <head> 
+	      <title>Passengers Registration for Tours & Travels</title> 
 	
 	<script src= "https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"> 
 	</script> 
-</head> 
+      
+   </head> 
 
-<body style = "text-align:center;"> 
+        <body style = "text-align:center;"> 
 	
-	<h1 style = "color:Red;" > 
-		Passengers Registration page
-	</h1> 
+	        <h1 style = "color:Red;" > 
+		      Passengers Registration page
+	        </h1> 
 	
-	<p id = "GFG_UP" style = 
-			"font-size: 15px; font-weight: bold;"> 
-	</p> 
+	        <p id = "GFG_UP" style = "font-size: 15px; font-weight: bold;"></p> 
 	
 	<select id = "select"> 
 		<option value="Chennai">Chennai</option> 
@@ -32,22 +30,19 @@
 		Click here 
 	</button> 
 	
-	<p id = "GFG_DOWN" style = 
-		"font-size: 23px; font-weight: bold; color: green; "> 
-	</p> 
+	       <p id = "GFG_DOWN" style = "font-size: 23px; font-weight: bold; color: green; "></p> 
 	
 	<script> 
-		var el_up = document.getElementById("GFG_UP"); 
-		var el_down = document.getElementById("GFG_DOWN"); 
+		    var element_up = document.getElementById("GFG_UP"); 
+		    var element_down = document.getElementById("GFG_DOWN"); 
 		
-		el_up.innerHTML = "Select the Exam city from options given below"; 
+		    element_up.innerHTML = "Select the Exam city from options given below"; 
 		
-		function gfg_Run() { 
-			el_down.innerHTML = 
+		    function gfg_Run() { 
+			  element_down.innerHTML = 
 				$("#select").prop("selectedIndex", 0).val(); 
-      
-		}		 
+      }		 
 	</script> 
-</body> 
 
+    </body> 
 </html> 
