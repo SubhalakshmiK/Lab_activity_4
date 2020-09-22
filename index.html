@@ -17,20 +17,25 @@
 <meta charset="utf-8">
 <title>jQuery Get Selected Option Value</title>
 <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-<script>
+<!-- <script>
 $(document).ready(function(){
     $("select.city").change(function(){
         var selectedCity = $(this).children("option:selected").val();
         // alert("You have selected the city - " + selectedCity);
-      $("body").css("background-image", "url(../Images/"+selectedCity+".jpg)"); 
-      
-    });
 });
+  
 </script>
   
- 
+<script>
   
-<body>
+   $("#pictype").change(function(){
+    var imageFileName = $(this).children("option:selected").val();
+    $("body").css("background-image", "url(  https://cdn.glitch.com/ea9b5530-6559-46a5-bead-6a9fd8c997eb%2FChennai.jpeg?v=1600777445228)");  
+
+});
+  </script>
+   -->
+<!-- <body>
     <form>
         <label>Select a City:</label>
         <select class="city">
@@ -63,7 +68,17 @@ $(document).ready(function(){
 				$("#select").prop(selectedCity); 
       
 		}		 
-	</script> 
+	</script>  -->
+  
+  <label for="pictype">Select a New Background</label>
+<select id="pictype" name="pictype" onchange="document.body.style.background = this.value">
+	<option value=https://cdn.glitch.com/ea9b5530-6559-46a5-bead-6a9fd8c997eb%2FChennai.jpeg?v=1600777445228 >Chennai</option>
+	<option value="green">pic2</option>
+	<option value="blue">pic3</option>
+	<option value="yellow">pic4</option>
+	<option value="lime">pic5</option>
+	<option value="gray">pic6</option>
+</select>
   
 
 </html>
