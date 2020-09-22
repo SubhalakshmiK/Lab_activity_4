@@ -29,10 +29,21 @@ $(document).ready(function(){
   
   $("button").click(function(){
     if(city == 'Chennai')
-        var imageUrl = "https://cdn.glitch.com/ea9b5530-6559-46a5-bead-6a9fd8c997eb%2FChennai.jpeg?v=1600777445228"
+        var imageUrl = "https://cdn.glitch.com/ea9b5530-6559-46a5-bead-6a9fd8c997eb%2Fchennai.jpeg?v=1600782776355"
         
+    else if(city == 'Hyderabad')
+        var imageUrl = "https://cdn.glitch.com/ea9b5530-6559-46a5-bead-6a9fd8c997eb%2Fhyd.jpeg?v=1600782710122";
+    
+    else if(city == 'Bangalore')
+        var imageUrl = "https://cdn.glitch.com/ea9b5530-6559-46a5-bead-6a9fd8c997eb%2FBengalore.jpeg?v=1600782688867";
+    
+    else if(city == 'Mumbai')
+        var imageUrl = "https://cdn.glitch.com/ea9b5530-6559-46a5-bead-6a9fd8c997eb%2Fmumbai.jpeg?v=1600782681060";
+    
+    else if(city == 'New Delhi')
+        var imageUrl = "https://cdn.glitch.com/ea9b5530-6559-46a5-bead-6a9fd8c997eb%2Fdelhi.jpeg?v=1600782675733";
     else
-        var imageUrl = "https://i.pinimg.com/originals/17/50/8f/17508f72889b7fa55fdeb413708345d1.jpg";
+        var imageUrl = "https://cdn.glitch.com/ea9b5530-6559-46a5-bead-6a9fd8c997eb%2Fvizag.jpeg?v=1600782778603";
     
     
     $(".box").css("background-image", "url(" + imageUrl + ")");
@@ -72,12 +83,14 @@ $(document).ready(function(){
 </body>
   
   <br><br> 
+  
+<!--   <br><br> 
    <button onclick = "gfg_Run()"> 
 		View Location
 	</button> 
   <p id = "GFG_DOWN" style = 
 		"font-size: 23px; font-weight: bold; color: green; "> 
-	</p> 
+	</p>  -->
 	
 	<script> 
 		var el_up = document.getElementById("GFG_UP"); 
