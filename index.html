@@ -1,42 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8">
+<html>
+   <head>
+    <title>Application Registration</title>
+    <meta name="robots" content="noindex, nofollow">
     
-    <title>Hello!</title>
-    
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    
-    <link rel="stylesheet" href="css/style.css">
-    
-    <script> 
-    </head>
-      
-     <body>
-    <nav>
-    <a class="dropdown-toggle" href="#" title="Menu">Dropdown</a>
-    <ul class="dropdown">
-      <li><a href="http://w3iscool.com/category/freebies/html-template/">HTML Templates</a></li>
-      <li><a href="http://w3iscool.com/category/freebies/">Freebies</a></li>
-      <li><a href="http://w3iscool.com/category/tips-tutorials">Tutorial</a></li>
-      <li><a href="http://w3iscool.com/category/freebies/ui-kit/">UI Kits</a></li>
-    </ul>
-    </nav> 
-      
-    
-      
-    $(document).ready(function(){
-      $("button").click(function(){
-        $("p").hide();
-      }); 
-    });
-    </script>
-    <script type="text/javascript" src="customComboBox.js"></script>
-    </head>
-      <body>
+     <!-- Include CSS File Here -->
+    <link rel="stylesheet" href="css/style.css"/>
 
-       <h2>Exam Registration</h2>
+     <!-- Include JS File Here -->
+     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+     <script type="text/javascript" src="js/registration.js"></script>
 
-       
-     </body>
-</html>  
+   </head>
+     
+  <body>
+
+    <div class="container">
+
+    <div class="main">
+    <form class="form" method="post" action="#">
+       <h2>Application Registration</h2>
+       <label>Name :</label>
+       <input type="text" name="dname" id="name">
+      
+       <label>Email :</label>
+       <input type="text" name="demail" id="email">
+      
+       <label>Password :</label>
+       <input type="password" name="password" id="password">
+      
+       <label>Confirm Password :</label>
+       <input type="password" name="cpassword" id="cpassword">
+
+       <input type="button" name="register" id="register" value="Register">
+   </form>
+   </div>
+    </div>   
+ </body>
+</html>
