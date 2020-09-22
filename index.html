@@ -20,25 +20,35 @@
 
   <script>
 $(document).ready(function(){
+  var city;
     $("select.city").change(function(){
         var selectedCity = $(this).children("option:selected").val();
-        alert("You have selected the city - " + selectedCity);
+        // alert("You have selected the city - " + selectedCity);
+      city = selectedCity
+    });
+  
+  $("button").click(function(){
+    if(city == 'Chennai')
+        var imageUrl = "https://cdn.glitch.com/ea9b5530-6559-46a5-bead-6a9fd8c997eb%2FChennai.jpeg?v=1600777445228"
+        
+    else
+        var imageUrl = "https://i.pinimg.com/originals/17/50/8f/17508f72889b7fa55fdeb413708345d1.jpg";
+    
+    
+    $(".box").css("background-image", "url(" + imageUrl + ")");
     });
 });
   </script>
   
-  <script>
+<!--   <script>
 $(document).ready(function(){
     // Set background image of a div on click of the button
     $("button").click(function(){
-        // var imageUrl = "https://i.pinimg.com/originals/17/50/8f/17508f72889b7fa55fdeb413708345d1.jpg";
-       var imageUrl = "https://cdn.glitch.com/ea9b5530-6559-46a5-bead-6a9fd8c997eb%2FChennai.jpeg?v=1600777445228"
+        var imageUrl = "https://i.pinimg.com/originals/17/50/8f/17508f72889b7fa55fdeb413708345d1.jpg";
         $(".box").css("background-image", "url(" + imageUrl + ")");
-    
-      
     });    
 });
-</script>
+</script> -->
  <style>
     .box{
         width: 500px;
