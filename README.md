@@ -13,11 +13,10 @@ Your Project
 
 ### ← README.md
 
-That's this file, where you can tell people what your cool website does and how you built it.
-
+This is made with jquery, html and CSS for the implementation of Passengers registration for tourism development (lab_activity)
 ### ← index.html
 
-Where you'll write the content of your website. 
+Where you'll write the content of my webpage developed for Tourism
 
 ### ← style.css
 
