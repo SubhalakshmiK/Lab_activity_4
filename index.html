@@ -1,5 +1,18 @@
+<!DOCTYPE HTML> 
 <html lang="en">
 <head>
+	<title>Passengers Registration for Tours & Travels</title> 
+	
+	<script src= "https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"> 
+	</script> 
+  </head>
+  
+<body style = "text-align:center;"> 
+	
+	<h1 style = "color:Red;" > 
+		Passengers Registration page
+	</h1> 
+  </body>
 <meta charset="utf-8">
 <title>jQuery Get Selected Option Value</title>
 <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
@@ -7,11 +20,13 @@
 $(document).ready(function(){
     $("select.city").change(function(){
         var selectedCity = $(this).children("option:selected").val();
-        alert("You have selected the country - " + selectedCity);
+        alert("You have selected the city - " + selectedCity);
     });
 });
 </script>
-</head> 
+  
+ 
+  
 <body>
     <form>
         <label>Select a City:</label>
@@ -19,10 +34,15 @@ $(document).ready(function(){
             <option value="Chennai">Chennai</option>
             <option value="Hyderabad">Hyderabad</option>
             <option value="Bangalore">Bangalore</option>
-            <option value="Chennai">Chennai</option>
-            <option value="Hyderabad">Hyderabad</option>
-            <option value="Bangalore">Bangalore</option>
+            <option value="Mumbai">Mumbai</option>
+            <option value="New Delhi">New Delhi</option>
+            <option value="Vizag">Vizag</option>
         </select>
     </form>
 </body>
+  <br><br> 
+   <button onclick = "gfg_Run()"> 
+		Click here 
+	</button> 
+
 </html>
