@@ -17,42 +17,17 @@
 <meta charset="utf-8">
 <title>jQuery Get Selected Option Value</title>
 <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-  
+
   <script>
 $(document).ready(function(){
     $("select.city").change(function(){
         var selectedCity = $(this).children("option:selected").val();
-        $("body").css("background-image", "url("https://socialimages.sakalmediagroup.com/sakaltimes-prod/s3fs-public/styles/generic_md_75/public/news-story/cover-images/1shutterstock_1121498201_20_281_29.jpg")"); 
-        // alert("You have selected the city - " + selectedCity);
-});
-  
-</script>
-
-  <!-- script>
-    $(document).ready(function(){
-  $("#pictype").change(function(){
-    var imageFileName = $(this).val();
-    $("body").css("background-image", "url(../Images/"+imageFileName+".jpg)");    
+        alert("You have selected the city - " + selectedCity);
+    });
 });
   </script>
-<!-- <script>
-$(document).ready(function(){
-    $("select.city").change(function(){
-        var selectedCity = $(this).children("option:selected").val();
-        // alert("You have selected the city - " + selectedCity);
-});
+ 
   
-</script>
-  
-<script>
-  
-   $("#pictype").change(function(){
-    var imageFileName = $(this).children("option:selected").val();
-    $("body").css("background-image", "url(  https://cdn.glitch.com/ea9b5530-6559-46a5-bead-6a9fd8c997eb%2FChennai.jpeg?v=1600777445228)");  
-
-});
-  </script>
-   -->
 <body>
     <form>
         <label>Select a City:</label>
@@ -66,10 +41,10 @@ $(document).ready(function(){
         </select>
     </form>
 </body>
-  <br><br> 
   
-<!--    <button onclick = "gfg_Run()"> 
-		Click here 
+  <br><br> 
+   <button onclick = "gfg_Run()"> 
+		View Location
 	</button> 
   <p id = "GFG_DOWN" style = 
 		"font-size: 23px; font-weight: bold; color: green; "> 
@@ -86,7 +61,7 @@ $(document).ready(function(){
 				$("#select").prop(selectedCity); 
       
 		}		 
-	</script>   -->
+	</script>  
   
   
 
