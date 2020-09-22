@@ -13,6 +13,7 @@
 		Passengers Registration page
 	</h1> 
   </body>
+  
 <meta charset="utf-8">
 <title>jQuery Get Selected Option Value</title>
 <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
@@ -20,7 +21,9 @@
 $(document).ready(function(){
     $("select.city").change(function(){
         var selectedCity = $(this).children("option:selected").val();
-        alert("You have selected the city - " + selectedCity);
+        // alert("You have selected the city - " + selectedCity);
+      $("body").css("background-image", "url(../Images/"+selectedCity+".jpg)"); 
+      
     });
 });
 </script>
@@ -41,8 +44,26 @@ $(document).ready(function(){
     </form>
 </body>
   <br><br> 
+  
    <button onclick = "gfg_Run()"> 
 		Click here 
 	</button> 
+  <p id = "GFG_DOWN" style = 
+		"font-size: 23px; font-weight: bold; color: green; "> 
+	</p> 
+	
+	<script> 
+		var el_up = document.getElementById("GFG_UP"); 
+		var el_down = document.getElementById("GFG_DOWN"); 
+		
+		el_up.innerHTML = "Select the Exam city from options given below"; 
+		
+		function gfg_Run() { 
+			el_down.innerHTML = 
+				$("#select").prop(selectedCity); 
+      
+		}		 
+	</script> 
+  
 
 </html>
