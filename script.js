@@ -13,7 +13,7 @@ $(document).ready(function(){
 // Add active class to active link
 $(function(){
  var pathname = (window.location.pathname.match(/[^\/]+$/)[0]);
- $('nav ul li a').each(function() {
+ $('document').each(function() {
     var url = $(this).attr('href');
     var url_new = url.split("#");
     var new_url = url_new[0]
