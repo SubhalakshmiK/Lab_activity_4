@@ -31,12 +31,21 @@ $(document).ready(function(){
 $(document).ready(function(){
     // Set background image of a div on click of the button
     $("button").click(function(){
-        var imageUrl = "images/sky.jpg";
+        // var imageUrl = "https://i.pinimg.com/originals/17/50/8f/17508f72889b7fa55fdeb413708345d1.jpg";
+       var imageUrl = "https://cdn.glitch.com/ea9b5530-6559-46a5-bead-6a9fd8c997eb%2FChennai.jpeg?v=1600777445228"
         $(".box").css("background-image", "url(" + imageUrl + ")");
+    
+      
     });    
 });
 </script>
- 
+ <style>
+    .box{
+        width: 500px;
+        height: 300px;
+        border: 5px solid #333;
+    }
+</style>
   
 <body>
     <form>
@@ -72,6 +81,7 @@ $(document).ready(function(){
       
 		}		 
 	</script> 
+  
   <body>
     <div class="box"></div>
     <p><button type="button">Set Background Image</button></p>
