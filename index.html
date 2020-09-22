@@ -7,16 +7,29 @@
 	</script> 
   </head>
   
+ 
+  
 <body style = "text-align:center;"> 
 	
 	<h1 style = "color:Red;" > 
-		Passengers Registration page
+		Tourism Passengers registration page
 	</h1> 
   </body>
   
 <meta charset="utf-8">
 <title>jQuery Get Selected Option Value</title>
 <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+  
+<body>
+  <p><span class="blink">Avail 10% discount EoD today!!! HURRY</span> </p>
+</body>
+<script>
+  function blink_text() {
+    $('.blink').fadeOut(500);
+    $('.blink').fadeIn(500);
+}
+setInterval(blink_text, 1000);
+  </script>
 
   <script>
 $(document).ready(function(){
@@ -42,29 +55,33 @@ $(document).ready(function(){
     
     else if(city == 'New Delhi')
         var imageUrl = "https://cdn.glitch.com/ea9b5530-6559-46a5-bead-6a9fd8c997eb%2Fdelhi.jpeg?v=1600782675733";
-    else
+    else if(city == "Vizag")
         var imageUrl = "https://cdn.glitch.com/ea9b5530-6559-46a5-bead-6a9fd8c997eb%2Fvizag.jpeg?v=1600782778603";
     
     
     $(".box").css("background-image", "url(" + imageUrl + ")");
+    
+    
     });
+});
+  
+  </script>
+
+  
+  <script>
+    $(document).keypress(function(e) {
+    if(e.which == 13) {
+        alert('You pressed enter!');
+    }
 });
   </script>
   
-<!--   <script>
-$(document).ready(function(){
-    // Set background image of a div on click of the button
-    $("button").click(function(){
-        var imageUrl = "https://i.pinimg.com/originals/17/50/8f/17508f72889b7fa55fdeb413708345d1.jpg";
-        $(".box").css("background-image", "url(" + imageUrl + ")");
-    });    
-});
-</script> -->
  <style>
     .box{
         width: 500px;
         height: 300px;
         border: 5px solid #333;
+      position: relative;
     }
 </style>
   
